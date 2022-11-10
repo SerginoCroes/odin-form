@@ -26,7 +26,7 @@
         </div>
         <div class="formcontent">
             <p>Let's do this!</p>
-            <form>
+            <form id="form" action="submit.html">
                 <div class="field">
                     <label for="fname">FIRST NAME</label>
                     <input type="text" name="cform" id="fname">
@@ -44,22 +44,22 @@
                 <div class="field">
 
                     <label for="pnumber">PHONE NUMBER</label>
-                    <input type="text" name="cform" id="email">
+                    <input type="text" name="cform" id="pnumber">
                 </div>
                 <div class="field">
 
                     <label for="pword">PASSWORD</label>
-                    <input type="password" name="cform" id="pword">
+                    <input type="password" name="cform" id="pword" required>
                 </div>
                 <div class="field">
 
                     <label for="cpword">CONFIRM PASSWORD</label>
-                    <input type="password" name="cform" id="cpword">
+                    <input type="password" name="cform" id="cpword" required>
                 </div>
             </form>
         </div>
         <div class="footerbutton">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="form">Create Account</button>
             <p>Aready have an account? <a href="./login.html">Log in</a></p>
         </div>
     </div>
